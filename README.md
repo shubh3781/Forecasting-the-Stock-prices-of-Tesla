@@ -1,14 +1,38 @@
+Forecasting Tesla's Stock Prices
+Project Overview
+This project aims to forecast Tesla's stock prices using a combination of time-series analysis and sentiment analysis derived from Twitter data. Employing machine learning and deep learning methodologies, the project analyzes historical stock data and sentiment metrics to predict future price movements.
 
-Objectives -
-• The goal of this research is to f ind the most eff icient machine learning or deep learning algorithms to predict Tesla stock prices along with time series analysis.
-• Along with time-series analysis, sentiment-based analysis has been used to investigate how tweets affect the price of Tesla stocks.
-• Imported two different datasets in Jupyter Notebooks; for sentiment analysis, tweet data was extracted by using Twitter API and for Time series analysis, collected historical data from the Yahoo finance website.
-• To perform Time Series Analysis, pre-processed the dataset by removing outliers and Null values to get ready for Machine Learning models.
-• Conv-RNN, Conv-LSTM, and Conv-BILSTM algorithms were used to identify the lowest value of MAE to predict the Tesla Predicted Stock Prices.
-• Tweepy Python library is used to fetch the tweeets on Tesla Stock Prices from Twitter.
-• To perform deep learning and machine learning algorithms, pre-processed the data with cleanliness, generalizations, and removing null values and unwanted columns.
-• NLTK approach was used to classify the text data into three sentiment categories - positive, negative, and neutral.
-• DNN, Catboost and Random Forest Classifier models were used to predict the real stock prices of Tesla.
-• Comparing all the models on the basis of MAE score i.e. Mean Absolute Error and resulted that Conv-LSTM and Catboost algorithm performed better for time series and sentiment analysis respectively.
-• Followed the Data Governance Ethics rules to use external data for personal project analysis.
-Tools: Python | NLTK | Machine Learning | Deep Learning | Jupyter Notebook | Tweeter API.
+Data Sources
+The project utilizes two primary data sources:
+
+Historical Stock Data (TSLA.csv, tsla_stock_price.csv): Includes daily stock prices of Tesla, detailing open, high, low, and close prices along with volume traded.
+Twitter Data (tweet_tesla_data.csv): Contains extracted tweets related to Tesla, used for sentiment analysis to understand public perception and its impact on stock prices.
+Methodologies
+Time Series Analysis: Applying statistical techniques to model and forecast future stock prices based on historical data.
+Sentiment Analysis: Analyzing Twitter data to gauge public sentiment and its correlation with stock price fluctuations.
+Technologies Used
+Python: Primary programming language.
+Pandas & NumPy: For data manipulation and numerical computation.
+TensorFlow & Keras: For building and training deep learning models.
+NLTK & VADER SentimentIntensityAnalyzer: For processing and analyzing text data.
+Matplotlib, Seaborn, Plotly: For data visualization.
+Jupyter Notebook: For interactive development and presentations.
+System Requirements
+Operating System: Windows 10 or similar.
+Python Version: 3.8 or newer.
+Required Libraries: Pandas, NumPy, TensorFlow, Keras, NLTK, Matplotlib, Seaborn, Plotly.
+Hardware: Recommended to have at least 16GB RAM and sufficient disk space.
+Setup and Installation
+Clone the Repository: Clone this repository to your local machine using git clone <repository-url>.
+Environment Setup:
+Install Python 3.8 or newer.
+Install all dependencies: pip install -r requirements.txt (ensure you have a requirements.txt file listing all necessary libraries).
+Running the Notebooks:
+Open the Jupyter Notebooks in this repository via Jupyter Lab or Jupyter Notebook.
+Run each cell to see the analysis and results.
+How to Use
+Navigate to the notebook containing the time-series analysis to view the modeling of stock prices based on historical data.
+Explore the sentiment analysis notebook to understand the impact of public sentiment on Tesla's stock prices.
+Adjust parameters and models as needed to experiment with different forecasting techniques.
+License
+This project is released under the MIT License.
